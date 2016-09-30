@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <RadioButton
+        android:id="@+id/filters_child_radio"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_alignBaseline="@+id/filters_child_label"/>
+
+    <br.com.taqtile.android.checkboxes.CustomCheckbox
+        android:id="@+id/filters_child_checkbox"
+        style="@style/TextElement.Label"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_alignBaseline="@id/filters_child_label"/>
+
+    <br.com.taqtile.android.textviews.CustomTextView
+        android:id="@id/filters_child_label"
+        style="@style/TextElement.H4"
+        android:layout_toRightOf="@id/filters_child_radio"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_small"/>
+
+    <View style="@style/Separator_Horizontal"
+        android:id="@+id/filters_child_divider"/>
+
+    <View
+        android:id="@+id/filters_child_clickable_view"
+        style="@style/Clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/filters_child_label"/>
+
+</RelativeLayout>

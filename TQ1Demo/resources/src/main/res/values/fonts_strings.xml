@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- FONT FAMILIES -->
+    <string name="font_family_primary">Roboto</string>
+
+    <!-- FONT WEIGHTS -->
+    <string name="font_weight_medium">-Medium</string>
+    <string name="font_weight_regular">-Regular</string>
+    <string name="font_weight_bold">-Bold</string>
+
+    <!-- FONT FILE EXTENSION -->
+    <string name="font_file_extension">ttf</string>
+
+</resources>

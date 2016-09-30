@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--component_custom_label_edit_text_caption_expanded_height-->
+    <!--TODO: this height is fixed and it is coupled with the anatomy of CustomLabelEditTextCaption. In other words, if you change this component, please, change this height as well.-->
+    <!--We need this height when we're using CustomLabelEditTextCaption inside a Dialog. The expand/contraction animation of this component doesn't work well inside AlertDialogs and this is the current solution-->
+    <!--To see the broken animation, set a CustomLabelEditTextCaption (that is inside a Dialog) height as wrap_content-->
+    <dimen name="component_custom_label_edit_text_caption_expanded_height">68dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+
+    <dimen name="margin_extra_extra_small">4dp</dimen>
+    <dimen name="margin_extra_small">8dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    <dimen name="margin_extra_extra_large">56dp</dimen>
+
+    <!-- Badge -->
+    <dimen name="badge_border">1dp</dimen>
+    <dimen name="badge_padding">4dp</dimen>
+    <dimen name="badge_border_radius">8dp</dimen>
+    <dimen name="badge_min_size">16dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_corner_radius">2dp</dimen>
+
+    <!--activity_photo_browser-->
+    <dimen name="activity_photo_browser_button_height">32dp</dimen>
+
+    <!-- Order list separator -->
+    <dimen name="component_order_details_product_container_separator_larger">8dp</dimen>
+
+    <!-- Clickable Shopping List Item view -->
+    <dimen name="view_clickable_area">80dp</dimen>
+
+    <!--component_product_carousel_grid_item-->
+    <dimen name="component_product_carousel_grid_item_image_height">200dp</dimen>
+
+    <!--component_product_carousel_grid_loading_item-->
+    <dimen name="component_product_carousel_grid_loading_item_label_placeholder_height">10dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="menu_icon_size">24dp</dimen>
+    <dimen name="menu_header_btn_height">34dp</dimen>
+    <dimen name="menu_header_btn_width">80dp</dimen>
+
+    <!--Offer carousel grid item-->
+    <dimen name="component_offers_carousel_grid_item_height">120dp</dimen>
+    <dimen name="component_offers_carousel_grid_item_width">220dp</dimen>
+
+    <!--Product carousel grid item-->
+    <dimen name="component_product_carousel_grid_item_width">144dp</dimen>
+    <dimen name="component_product_carousel_grid_item_height">272dp</dimen>
+
+    <!-- Product list toolbar -->
+    <dimen name="product_list_icon_height">24dp</dimen>
+    <dimen name="product_list_toolbar_height">57dp</dimen>
+
+    <!-- SearchBar -->
+    <dimen name="search_bar_height">60dp</dimen>
+
+    <!-- Space Between Lines -->
+    <dimen name="space_between_lines">4dp</dimen>
+
+    <!--Spinner Height-->
+    <dimen name="style_guide_spinner_height">48dp</dimen>
+
+    <!--Shopping list Spinner Width-->
+    <dimen name="component_shopping_list_item_spinner_width">50dp</dimen>
+
+    <dimen name="fab_bottom_margin">72dp</dimen>
+</resources>

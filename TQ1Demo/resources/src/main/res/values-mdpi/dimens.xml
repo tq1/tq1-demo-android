@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- UNIVERSAL 1 PIXEL -->
+    <dimen name="universal_1_pixel">1dp</dimen>
+
+</resources>

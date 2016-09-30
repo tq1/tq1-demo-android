@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bkg_transparent</item>
+    </style>
+
+    <style name="AppButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:stateListAnimator">@null</item> <!--remove shadow api21-->
+        <item name="android:drawablePadding">@dimen/margin_extra_small</item>
+    </style>
+
+    <style name="AppButton.Primary">
+        <item name="android:background">@drawable/bkg_button_type_primary</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="AppButton.Secondary">
+        <item name="android:background">@drawable/bkg_button_type_secondary</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="AppButton.CallToAction">
+        <item name="android:background">@drawable/bkg_button_type_call_to_action</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="AppButton.Alert">
+        <item name="android:background">@drawable/bkg_button_type_alert</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="AppButton.Neutral">
+        <item name="android:background">@drawable/bkg_button_type_neutral</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="AppButton.Link">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@drawable/link_button_text_color</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="AppButton.Search">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:paddingRight">@dimen/margin_medium</item>
+        <item name="android:paddingLeft">@dimen/margin_medium</item>
+        <item name="android:drawableLeft">@drawable/ic_search</item>
+        <item name="android:drawablePadding">26dp</item>
+        <item name="android:background">@drawable/bkg_transparent</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="AppButton.Neutral.Phone">
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+</resources>

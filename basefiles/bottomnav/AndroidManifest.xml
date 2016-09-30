@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.taqtile.android.template">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+           android:name=".main.MainActivity"
+           android:windowSoftInputMode="adjustNothing"
+           android:label="Main">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"/>
+               <category android:name="android.intent.category.LAUNCHER"/>
+           </intent-filter>
+       </activity>
+
+       <activity
+           android:name=".signin.presentation.activity.SignInActivity"
+           android:label="Sign In">
+       </activity>
+
+        <service
+            android:name=".deviceregistration.service.DeviceRegistrationIntentService"
+            android:exported="false" />
+        <service
+            android:name=".deviceregistration.service.TemplateInstanceIDListenerService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".pushnotification.service.PushNotificationService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="br.com.taqtile.android.template" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

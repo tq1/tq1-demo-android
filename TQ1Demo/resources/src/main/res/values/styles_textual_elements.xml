@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextElement">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="TQ_font_family">@string/font_family_primary</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="TQ_font_file_extension">@string/font_file_extension</item>
+    </style>
+
+    <style name="TextElement.Label">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darker</item>
+    </style>
+
+    <style name="TextElement.InputValue">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.InputPlaceholder">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="TextElement.Date">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darker</item>
+    </style>
+
+    <style name="TextElement.Date.Bold">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="TQ_font_weight">@string/font_weight_bold</item>
+        <item name="android:textColor">@color/color_primary</item>
+    </style>
+
+    <style name="TextElement.Caption">
+        <item name="android:textSize">@dimen/font_size_extra_small</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.Caption.Error">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/color_alert</item>
+    </style>
+
+    <style name="TextElement.Body">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/color_gray_darker</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="TextElement.Body.Medium">
+        <item name="TQ_font_weight">@string/font_weight_medium</item>
+    </style>
+
+    <style name="TextElement.Body.ParagraphBottomMargin">
+        <item name="android:layout_marginBottom">@dimen/margin_extra_small</item>
+    </style>
+
+    <style name="TextElement.Body.BulletTopMargin">
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+    </style>
+
+    <style name="TextElement.Display1">
+        <item name="android:textSize">@dimen/font_size_extra_large</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.H1">
+        <item name="android:textSize">@dimen/font_size_extra_large</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@color/color_primary</item>
+    </style>
+
+    <style name="TextElement.H2">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="TQ_font_weight">@string/font_weight_bold</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextElement.H2.SectionHeader">
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+    </style>
+
+    <style name="TextElement.CustomPlaceholderMessage">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="TQ_font_weight">@string/font_weight_medium</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+    </style>
+
+    <style name="TextElement.H3">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="TQ_font_weight">@string/font_weight_medium</item>
+    </style>
+
+
+    <style name="TextElement.H3.Clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bkg_transparent</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+    </style>
+
+    <style name="TextElement.H4">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.CategoryItem">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="TQ_font_weight">@string/font_weight_regular</item>
+    </style>
+
+    <style name="TextElement.CategoryItem.Clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bkg_transparent</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+
+    <style name="TextElement.MenuLink">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+
+    <style name="TextElement.MenuLink.Bold">
+        <item name="TQ_font_weight">@string/font_weight_medium</item>
+    </style>
+
+    <style name="TextElement.MenuLink.Alert">
+        <item name="android:textColor">@color/color_alert</item>
+    </style>
+
+    <style name="TextElement.MenuLink.Caption">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/color_gray_darkest</item>
+    </style>
+
+    <style name="TextElement.CallCenter">
+        <item name="android:textSize">@dimen/font_size_extra_large</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="TQ_font_weight">@string/font_weight_medium</item>
+    </style>
+
+</resources>

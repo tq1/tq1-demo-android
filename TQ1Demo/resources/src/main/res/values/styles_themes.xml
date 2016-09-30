@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="colorPrimary">@color/color_primary</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/color_white</item>
+        <item name="android:textColorSecondary">@color/color_white</item>
+        <item name="colorControlHighlight">@color/color_action_bar_highlight</item>
+    </style>
+
+    <style name="ToolbarTheme.White" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/color_gray_darker</item>
+        <item name="android:textColorSecondary">@color/color_gray_darker</item>
+        <item name="colorControlHighlight">@color/color_mask_highlighted</item>
+    </style>
+
+</resources>

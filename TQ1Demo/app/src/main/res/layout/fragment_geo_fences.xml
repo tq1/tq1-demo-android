@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_lighter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+
+        <RelativeLayout
+            android:id="@+id/geo_fences_map_cell_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:background="?attr/selectableItemBackground">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/geo_fences_map_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextElement.H3"
+                android:textIsSelectable="false"
+                android:paddingTop="@dimen/margin_large"
+                android:paddingBottom="@dimen/margin_large"
+                android:text="@string/geo_fences_map_title"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator">
+
+        </include>
+
+        <RelativeLayout
+            android:id="@+id/geo_fences_log_cell_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:background="?attr/selectableItemBackground">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/geo_fences_log_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextElement.H3"
+                android:textIsSelectable="false"
+                android:paddingTop="@dimen/margin_large"
+                android:paddingBottom="@dimen/margin_large"
+                android:text="@string/geo_fences_log_title"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator">
+
+        </include>
+
+    </LinearLayout>
+
+</LinearLayout>

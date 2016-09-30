@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <com.taqtile.tq1demo.buttons.TemplateButton
+        android:id="@+id/fragment_profilenotlogged_signin_button"
+        style="@style/AppButton.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_profilenotlogged_signin_button_label"/>
+</LinearLayout>

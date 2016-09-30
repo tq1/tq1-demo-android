@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">TQ1 Demo</string>
+    <string name="fragment_signin_forgot_button_text">Esqueceu a senha?</string>
+    <string name="fragment_signin_signin_button_text">ENTRAR</string>
+    <string name="fragment_signin_facebook_button_text">ENTRAR COM FACEBOOK</string>
+    <string name="or">OU</string>
+    <string name="fragment_signin_signup_link_button_text">SOU UM NOVO CLIENTE</string>
+    <string name="fragment_productlist_filters_button_text">Filtros</string>
+    <string name="fragment_filter_apply_button_text">Aplicar</string>
+    <string name="fragment_filter_clear_button_text">Limpar</string>
+    <string name="fragment_profilenotlogged_signin_button_label">Sign In</string>
+
+    <!--Notifications-->
+    <string name="tqg_local_push_title">Local TQG Trigger</string>
+    <string name="notification_simple_push_title">Simple Push</string>
+    <string name="notification_link_push_title">External Link</string>
+
+    <!--Home-->
+    <string name="home_info_title">APP AND SDK INFO</string>Device ID
+    <string name="app_key_title">App Key</string>Device ID
+    <string name="device_id_title">Device ID</string>
+    <string name="geo_tracking_id_title">GeoTracking ID</string>
+    <string name="app_version_title">App Version</string>
+    <string name="tq1_version_title">TQ1 SDK Version</string>
+    <string name="tqg_version_title">TQG SDK Version</string>
+
+    <string name="tqg_not_enabled_message">TQG not enabled</string>
+    <string name="tq1_not_enabled_message">TQ1 not enabled</string>
+
+    <!--Drawer Menu-->
+    <string name="menu_home_title">Home</string>
+    <string name="menu_notifications_title">View Notifications</string>
+    <string name="menu_settings_title">Settings</string>
+    <string name="menu_custom_data_title">Custom Data</string>
+    <string name="menu_geo_fences_title">Geo Fences</string>
+    <string name="menu_triggers_list_title">Triggers List</string>
+
+    <!--Notification Details Screen-->
+    <string name="notification_details_title">Notification Details</string>
+    <string name="notification_details_title_title">Title</string>
+    <string name="notification_details_message_title">Message</string>
+    <string name="notification_details_data_sent_title">Data Sent</string>
+    <string name="notification_details_data_received_title">Data Received/Opened</string>
+    <string name="notification_details_status_sent_title">Status Sent</string>
+    <string name="notification_details_custom_action_title">Custom Action</string>
+    <string name="notification_details_content_type_title">Content Type</string>
+    <string name="notification_details_content_title">Content</string>
+
+    <string name="notification_details_open_content_button_text">Open Content</string>
+    <string name="notification_details_send_custom_status_button_text">Send Custom Status</string>
+    <string name="notification_details_mark_as_read_button_text">Mark as read</string>
+    <string name="notification_details_mark_as_unread_button_text">Mark as unread</string>
+
+    <string name="notification_send_custom_status_dialog_message">Send custom status</string>
+    <string name="notification_send_custom_status_dialog_positive_text">Send</string>
+    <string name="notification_send_custom_status_dialog_negative_text">Cancel</string>
+
+    <!--Geo Fences-->
+    <string name="geo_fences_map_title">Map</string>
+    <string name="geo_fences_log_title">Log/Debug</string>
+
+    <!--Settings-->
+    <string name="settings_tq1_title">Push Notifications</string>
+    <string name="settings_tqg_title">Geolocation</string>
+    <string name="settings_description">Turn settings off if you do not want to receive notifications based on your location or even if you donn\'t want to receive any notifications at all</string>
+
+    <!--Trigger List-->
+    <string name="trigger_list_description" formatted="false">ID: %s \nName: %s</string>
+
+    <!--Custom Data-->
+    <string name="custom_data_header">Custom Data</string>
+    <string name="custom_data_send_data_button_text">Send Custom Data</string>
+
+    <string name="custom_data_add_data_button_text">Add Custom Data</string>
+    <string name="custom_data_add_data_dialog_message">Add Custom Data</string>
+    <string name="custom_data_add_data_dialog_key_hint">Key</string>
+    <string name="custom_data_add_data_dialog_value_hint">Value</string>
+    <string name="custom_data_add_data_dialog_positive_button_text">Add</string>
+    <string name="custom_data_add_data_dialog_negative_button_text">Cancel</string>
+
+    <string name="custom_data_edit_data_dialog_message">Edit Custom Data</string>
+    <string name="custom_data_edit_data_dialog_positive_button_text">Save</string>
+    <string name="custom_data_edit_data_dialog_negative_button_text">Cancel</string>
+
+    <string name="custom_data_delete_data_dialog_message" formatted="false">Delete pair "%s -> %s"?</string>
+    <string name="custom_data_delete_data_dialog_positive_button_text">Delete</string>
+    <string name="custom_data_delete_data_dialog_negative_button_text">Cancel</string>
+
+    <string name="custom_data_add_data_error_message">Error adding/editing the custom data, please try again.</string>
+    <string name="custom_data_delete_data_success_message">Data successfully sent.</string>
+    <string name="custom_data_send_data_error_message">Error sending the custom data, please try again.</string>
+    <string name="custom_data_delete_data_error_message">Error deleting the custom data, please try again.</string>
+
+</resources>

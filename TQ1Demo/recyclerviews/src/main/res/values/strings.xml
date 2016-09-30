@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerViews</string>
+    <string name="filters_slider_title">Filtrar por:</string>
+    <string name="filters_text_format">%1$s (%2$s)</string>
+</resources>

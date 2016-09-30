@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/color_gray_lighter">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <br.com.taqtile.android.textviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="@dimen/margin_medium"
+            style="@style/TextElement.H4"
+            android:text="@string/custom_data_header"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/custom_data_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/custom_data_add_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            style="@style/AppButton.Primary"
+            android:text="@string/custom_data_add_data_button_text"/>
+
+        <Button
+            android:id="@+id/custom_data_send_data_button"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppButton.Primary"
+            android:text="@string/custom_data_send_data_button_text"/>
+
+    </LinearLayout>
+</ScrollView>

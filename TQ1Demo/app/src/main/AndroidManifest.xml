@@ -1,0 +1,115 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taqtile.tq1demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name=".C2D_MESSAGE" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.taqtile.tq1demo.home.presentation.activity.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.geofences.presentation.activity.GeoFencesActivity"
+            android:label="Geo Fences">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.productlist.presentation.activity.ProductListActivity"
+            android:label="Product List">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.settings.presentation.activity.SettingsActivity"
+            android:label="Settings">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.customdata.presentation.activity.CustomDataActivity"
+            android:label="Custom Data">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.notificationlist.presentation.activity.NotificationListActivity"
+            android:label="Notification List">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.notificationdetails.presentation.activity.NotificationDetailsActivity"
+            android:label="Notification Details">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.profilenotlogged.presentation.activity.ProfileNotLoggedActivity"
+            android:label="Profile">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.filter.presentation.activity.FilterActivity"
+            android:label="Filters">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.signin.presentation.activity.SignInActivity"
+            android:label="Sign In">
+        </activity>
+
+        <activity
+            android:name="com.taqtile.tq1demo.triggerlist.presentation.activity.TriggerListActivity"
+            android:label="Triggers List">
+        </activity>
+
+        <service
+            android:name="com.taqtile.tq1demo.pushnotification.service.PushNotificationService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.taqtile.tq1demo" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".triggers.receiver.TriggerReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taqtile.tqgeolocationsdk.LOCAL_TRIGGER">
+                </action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

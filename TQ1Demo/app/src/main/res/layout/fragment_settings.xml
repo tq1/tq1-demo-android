@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_lighter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/color_white">
+
+        <!--TQG Settings-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <Switch
+                android:id="@+id/tqg_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H2"
+                android:text="@string/settings_tqg_title"
+                android:gravity="center_vertical"
+                android:layout_alignBottom="@id/tqg_switch_button"
+                android:layout_alignTop="@id/tqg_switch_button"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--TQ1 Settings-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:gravity="center_vertical">
+
+            <Switch
+                android:id="@+id/tq1_switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H2"
+                android:gravity="center_vertical"
+                android:text="@string/settings_tq1_title"
+                android:layout_alignBottom="@id/tq1_switch_button"
+                android:layout_alignTop="@id/tq1_switch_button"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+    </LinearLayout>
+</LinearLayout>

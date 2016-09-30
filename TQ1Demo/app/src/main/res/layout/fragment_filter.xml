@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_filter_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View style="@style/Separator_Horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="horizontal"
+        android:gravity="right|bottom">
+
+        <com.taqtile.tq1demo.buttons.TemplateButton
+            android:id="@+id/fragment_filter_clear_button"
+            style="@style/AppButton.Neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/fragment_filter_clear_button_text"/>
+
+        <com.taqtile.tq1demo.buttons.TemplateButton
+            android:id="@+id/fragment_filter_apply_button"
+            style="@style/AppButton.Neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_extra_extra_small"
+            android:text="@string/fragment_filter_apply_button_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

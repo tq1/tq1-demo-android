@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BRAND PALETTE -->
+    <color name="color_brand_blue">#124983</color>
+    <color name="color_brand_red">#B81728</color>
+    <color name="color_brand_orange">#E27333</color>
+
+    <!-- APP PALETTE -->
+    <color name="color_primary">@color/color_brand_blue</color>
+    <color name="color_secondary">@color/color_brand_orange</color>
+    <color name="color_accessory">@color/color_brand_red</color>
+    <color name="color_alert">@color/color_brand_red</color>
+    <color name="color_call_to_action">@color/color_brand_orange</color>
+    <color name="color_neutral">@color/color_white</color>
+
+    <!-- GRAY PALLETE -->
+    <color name="color_gray_darkest">#393939</color>
+    <color name="color_gray_darker">#727272</color>
+    <color name="color_gray">#A7A9AC</color>
+    <color name="color_gray_lighter">#F3F3F3</color>
+    <color name="color_gray_measurement_table">#D8D8D8</color>
+
+    <!-- BLACK AND WHITE -->
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+
+    <!-- MASKS -->
+    <color name="color_mask_highlighted">#1A000000</color>
+    <color name="color_mask_disabled">#66FFFFFF</color>
+    <color name="color_action_bar_highlight">#28FFFFFF</color>
+
+    <!-- SNACKBAR -->
+    <color name="color_snack_bar_background">#43A047</color>
+    <color name="color_snack_bar_text">@color/color_white</color>
+
+    <!-- Order status -->
+    <color name="color_order_status_open">#ECAE0F</color>
+    <color name="color_order_status_payed">#43A047</color>
+    <color name="color_order_status_canceled">@color/color_alert</color>
+
+    <!-- OTHER -->
+    <color name="color_overlay">#33000000</color>
+</resources>

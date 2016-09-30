@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppEditText">
+        <item name="TQ_text_focus_color">@color/color_primary</item>
+        <item name="TQ_text_default_color">@color/color_gray_lighter</item>
+        <item name="TQ_text_invalid_color">@color/color_alert</item>
+        <item name="TQ_text_valid_color">@color/color_primary</item>
+        <item name="TQ_bottom_divider_focus_color">@color/color_primary</item>
+        <item name="TQ_bottom_divider_default_color">@color/color_gray_lighter</item>
+        <item name="TQ_bottom_divider_invalid_color">@color/color_alert</item>
+        <item name="TQ_bottom_divider_valid_color">@color/color_primary</item>
+        <item name="TQ_caption_invalid_color">@color/color_alert</item>
+        <item name="TQ_float_label_focus_style">@style/TextInputLayout</item>
+    </style>
+
+    <style name="TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_primary</item>
+    </style>
+
+</resources>

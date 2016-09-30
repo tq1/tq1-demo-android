@@ -1,0 +1,52 @@
+# osx noise
+.DS_Store
+.gradle
+.gradle/*
+
+.metadata
+.settings
+bin
+gen
+profile
+build
+
+#gradle local configurations
+local.properties
+
+# generated files
+bin/
+gen/
+out/
+build/
+
+# Local IDEA workspace
+.idea/workspace.xml
+.idea/libraries/*.xml
+
+# Sandbox stuff
+_sandbox
+
+# Android Studio noise
+*.iml
+.idea
+.idea/*
+
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
+
+# config file
+fastlane/.env
+

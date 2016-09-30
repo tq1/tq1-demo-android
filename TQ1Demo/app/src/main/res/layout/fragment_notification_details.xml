@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/color_gray_lighter">
+        <br.com.taqtile.android.textviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="@dimen/margin_medium"
+            style="@style/TextElement.H3"
+            android:text="@string/notification_details_title"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <!--Notification Title Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_title"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_title_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_title_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_title"
+                    android:layout_toEndOf="@id/notification_title"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Message Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_message"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_message_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_message_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_message"
+                    android:layout_toEndOf="@id/notification_message"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Data Sent Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_data_sent"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_data_sent_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_data_sent_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_data_sent"
+                    android:layout_toEndOf="@id/notification_data_sent"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Data Received Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_data_received"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_data_received_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_data_received_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_data_received"
+                    android:layout_toEndOf="@id/notification_data_received"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Status Sent Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_status_sent"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_status_sent_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_status_sent_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_status_sent"
+                    android:layout_toEndOf="@id/notification_status_sent"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Custom Action Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_custom_action"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_custom_action_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_custom_action_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_custom_action"
+                    android:layout_toEndOf="@id/notification_custom_action"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Content Type Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_content_type"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_content_type_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_content_type_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_content_type"
+                    android:layout_toEndOf="@id/notification_content_type"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+            <!--Notification Content Cell-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium">
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_content"
+                    style="@style/TextElement.H3"
+                    android:text="@string/notification_details_content_title"/>
+
+                <br.com.taqtile.android.textviews.CustomTextView
+                    android:id="@+id/notification_content_text_view"
+                    style="@style/TextElement.Body"
+                    android:layout_toRightOf="@+id/notification_content"
+                    android:layout_toEndOf="@id/notification_content"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/cell_separator"/>
+
+        </LinearLayout>
+
+        <!--Open Notification Content Button-->
+        <Button
+            android:id="@+id/notification_open_content_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:text="@string/notification_details_open_content_button_text"
+            style="@style/AppButton.Primary"/>
+
+        <!--Send Custom Status Button-->
+        <Button
+            android:id="@+id/notification_send_custom_status_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:text="@string/notification_details_send_custom_status_button_text"
+            style="@style/AppButton.Primary"/>
+
+        <!--Mark Notification as Read/Unread Button-->
+        <Button
+            android:id="@+id/notification_mark_as_read_unread_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:text="@string/notification_details_mark_as_unread_button_text"
+            style="@style/AppButton.Primary"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+        preDexLibraries = false
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName '0.1.0'
+    }
+
+    flavorDimensions "datatype"
+
+    productFlavors {
+        development {
+            applicationId "com.taqtile.tq1demo.development"
+            dimension = "datatype"
+        }
+
+        staging {
+            applicationId "com.taqtile.tq1demo.staging"
+            dimension = "datatype"
+        }
+
+        production {
+            applicationId "com.taqtile.tq1demo"
+            dimension = "datatype"
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("" + System.getenv("KEYSTORE_PATH"))
+            storePassword System.getenv("KEYSTORE_STORE_PASSWORD")
+            keyAlias System.getenv("KEYSTORE_ALIAS")
+            keyPassword System.getenv("KEYSTORE_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile "junit:junit:$rootProject.junitVersion"
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.0@aar') {
+        transitive = true;
+    }
+    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.supportLibraryVersion"
+    compile "com.android.support.test.espresso:espresso-idling-resource:$rootProject.espressoVersion"
+    compile "com.google.guava:guava:$rootProject.guavaVersion"
+    compile "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    // Espresso UI Testing
+    androidTestCompile "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
+    androidTestCompile "com.android.support.test.espresso:espresso-contrib:$rootProject.espressoVersion"
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:$rootProject.espressoVersion"
+    androidTestCompile "com.android.support:design:$rootProject.supportLibraryVersion"
+
+    // Resolve conflicts between main and test APK:
+    androidTestCompile "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
+    androidTestCompile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+
+    // Butter knife
+    compile "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    apt "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
+    // Renderer
+    compile "com.github.pedrovgs:renderers:$rootProject.rendererVersion"
+
+    // Picasso
+    compile "com.squareup.picasso:picasso:$rootProject.picassoVersion"
+
+    //Taqtile lib
+    compile "br.com.taqtile.android:checkboxes:$rootProject.taqtileLibVersion"
+    compile "br.com.taqtile.android:radiobuttons:$rootProject.taqtileLibVersion"
+    compile("br.com.taqtile.android:cleanbase:$rootProject.taqtileLibVersion") {
+        exclude group: "com.google.android.gms:play-services"
+    }
+    compile "br.com.taqtile.android:textviews:$rootProject.taqtileLibVersion"
+    compile "br.com.taqtile.android:utils:$rootProject.taqtileLibVersion"
+    compile "br.com.taqtile.android:design:$rootProject.taqtileLibVersion"
+
+    //Components
+    compile project(':recyclerviews')
+    compile project(':resources')
+    compile project(':edittexts')
+    compile project(':buttons')
+
+    //AutoValue
+    provided "com.google.auto.value:auto-value:$rootProject.autoValueVersion"
+    apt "com.google.auto.value:auto-value:$rootProject.autoValueVersion"
+    apt "com.ryanharter.auto.value:auto-value-parcel:$rootProject.autoValueParcelVersion"
+    compile "com.ryanharter.auto.value:auto-value-parcel-adapter:$rootProject.autoValueParcelVersion"
+    apt "com.ryanharter.auto.value:auto-value-gson:$rootProject.autoValueGsonVersion"
+    compile 'com.taqtile:android-sdk:3.4.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.taqtile:tqg-android-sdk:0.9.0'
+    compile 'com.google.android.gms:play-services:9.0.2'
+    compile 'com.google.android.gms:play-services-ads:9.0.2'
+    compile 'com.google.android.gms:play-services-auth:9.0.2'
+    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+
+}

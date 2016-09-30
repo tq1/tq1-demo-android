@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/color_black</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="CustomToolbar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_primary</item>
+        <item name="theme">@style/ToolbarTheme</item>
+    </style>
+
+    <style name="CustomToolbar.White">
+        <item name="android:background">@color/color_white</item>
+        <item name="theme">@style/ToolbarTheme.White</item>
+    </style>
+
+    <!--Separators -->
+    <style name="Separator_Vertical">
+        <item name="android:layout_width">@dimen/universal_1_pixel</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_gray_lighter</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Separator_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/universal_1_pixel</item>
+        <item name="android:background">@color/color_gray_lighter</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Separator_Horizontal.Larger">
+        <item name="android:layout_height">@dimen/component_order_details_product_container_separator_larger</item>
+    </style>
+
+    <style name="Separator_Horizontal.WithMargin">
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+    </style>
+
+
+</resources>

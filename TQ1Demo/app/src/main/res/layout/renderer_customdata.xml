@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_large">
+
+        <br.com.taqtile.android.textviews.CustomTextView
+            android:id="@+id/custom_data_key_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            style="@style/TextElement.H3"/>
+
+        <br.com.taqtile.android.textviews.CustomTextView
+            android:id="@+id/custom_data_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/TextElement.Body"/>
+
+
+    </RelativeLayout>
+    <include layout="@layout/cell_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/color_gray_lighter">
+
+    <br.com.taqtile.android.textviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="@dimen/margin_medium"
+        style="@style/TextElement.H4"
+        android:text="@string/home_info_title"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <!--App Key Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/app_key_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/app_key_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--Geo Tracking ID Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/geo_tracking_id_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/geo_tracking_id_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--Device ID Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/device_id_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/device_id_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--App Version Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/app_version_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/app_version_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--TQ1 SDK Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/tq1_version_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/tq1_sdk_version_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/cell_separator"/>
+
+        <!--TQG SDK Cell-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                style="@style/TextElement.H4"
+                android:text="@string/tqg_version_title"/>
+
+            <br.com.taqtile.android.textviews.CustomTextView
+                android:id="@+id/tqg_sdk_version_text_view"
+                style="@style/TextElement.H3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
